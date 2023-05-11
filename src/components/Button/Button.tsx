@@ -1,11 +1,16 @@
 import React from "react";
+import Button from '@material-ui/core/Button';
 
 export interface ButtonProps {
   label: string;
 }
 
-const Button = (props: ButtonProps) => {
-  return <button>{props.label}</button>;
+const Buttons = (props: ButtonProps) => {
+  return (
+    <Button variant="contained" color="primary">
+      {props.label}
+    </Button>
+  );
 };
 
-export default Button;
+export default Buttons;
